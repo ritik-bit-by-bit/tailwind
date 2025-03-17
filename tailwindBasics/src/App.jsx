@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import { RevenueCard } from "./components/revenueCard";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -37,7 +38,11 @@ yes
       <div>hi</div>
       <div>hey</div>
     </div>*/
-    <div></div>
+    <div className="grid grid-cols-3">
+      <RevenueCard title={'Amount Pending'} amount={'92,312.20'} orderCount={13}/>
+      <RevenueCard title={'Amount Pending'} amount={'92,312.20'} orderCount={false}/>
+      <RevenueCard title={'Amount Pending'} amount={'92,312.20'} orderCount={false}/>
+    </div>
   );
 }
 
